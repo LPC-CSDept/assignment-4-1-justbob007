@@ -3,6 +3,15 @@ def main():
     while True:
         start = input('Enter the starting letter: ')
         end = input('Enter the starting letter: ')
+        if ord(start)>ord(end) or start.isalpha() == False or end.isalpha() == False:
+            print("Please make the end letter after the start letter, and both are valid letters")
+        else:
+            break
+    for i in range(ord(start),ord(end)+1):
+        result.append(chr(i))
+        
+    
+    
 
     """
     ########################################
